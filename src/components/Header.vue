@@ -33,12 +33,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../styles/colors.scss';
 
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #353a5a;
+  background-color: $darkblue1;
   width: 100%;
   height: 90px;
 }
@@ -57,7 +58,7 @@ export default {
     transition: 0.3s ease-in-out all;
 
     &:hover {
-      color: #F9B17A;
+      color: $yellow;
     }
   }
 }

@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../styles/colors.scss';
+
 .soon {
     display: flex;
     justify-content: center;
