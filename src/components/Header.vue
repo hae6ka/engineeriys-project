@@ -12,13 +12,13 @@
       <a href="#contacts" class="nav__link"> Контакты </a>
     </nav>
 
-    <div class="user">
+    <a href="/Reg" class="user">
       <span class="user__username">
         {{ username }}
       </span>
-      
-      <img src="../assets/user_avatar.png" alt="" class="user__avatar">
-    </div>
+
+      <img src="../assets/user_avatar.png" alt="" class="user__avatar" />
+    </a>
   </header>
 </template>
 
@@ -28,12 +28,12 @@ export default {
   name: "Header",
   props: {
     username: String,
-  }
+  },
 };
 </script>
 
 <style scoped lang="scss">
-@import '../styles/colors.scss';
+@import "../styles/colors.scss";
 
 .header {
   display: flex;
@@ -64,6 +64,7 @@ export default {
 }
 
 .user {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
