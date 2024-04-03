@@ -1,7 +1,8 @@
 <template>
   <section>
-    <h1>Login</h1>
+    <h1>Reg</h1>
   </section>
+  <router-link to="/">home</router-link>
 </template>
 
 <script>

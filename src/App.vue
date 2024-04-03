@@ -6,9 +6,9 @@
 import { createMemoryHistory, createRouter } from "vue-router";
 
 import HomePage from "./Pages/HomePage.vue";
-import Profile from "./components/Profile.vue";
-import Reg from './components/Reg.vue';
-import Login from './components/Login.vue';
+import Profile from "./Pages/Profile.vue";
+import Reg from './Pages/Reg.vue';
+import Login from './Pages/Login.vue';
 
 const routes = [
   { path: "/", component: HomePage },

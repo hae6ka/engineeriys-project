@@ -6,12 +6,15 @@
   <Soon id="shop" title="Магазин скоро появится!" />
 
   <Soon id="news" title="Новости скоро появятся!" />
+
+  <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue";
 import Main from "../components/Main.vue";
 import Soon from "../components/Soon.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "HomePage",
@@ -19,6 +22,7 @@ export default {
     Header,
     Main,
     Soon,
+    Footer
   },
 };
 </script>

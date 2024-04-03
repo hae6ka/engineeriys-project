@@ -4,6 +4,8 @@
       Login
     </h1>
   </section>
+
+  <router-link to="/">home</router-link>
 </template>
 
 <script>
