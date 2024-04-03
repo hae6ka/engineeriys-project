@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <nav class="header__nav">
+      
       <a href="#main" class="nav__link"> Главная </a>
 
       <a href="#shop" class="nav__link"> Магазин </a>
@@ -12,13 +13,13 @@
       <a href="#contacts" class="nav__link"> Контакты </a>
     </nav>
 
-    <a href="/Reg" class="user">
+    <RouterLink to="/profile" class="user">
       <span class="user__username">
         {{ username }}
       </span>
 
       <img src="../assets/user_avatar.png" alt="" class="user__avatar" />
-    </a>
+    </RouterLink>
   </header>
 </template>
 

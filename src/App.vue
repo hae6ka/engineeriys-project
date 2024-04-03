@@ -1,29 +1,30 @@
 <template>
-  <Header username="Еще не вошел :(" />
-
-  <Profile class="profile" />
-
-  <Main id="main" />
-
-  <Soon id="shop" title="Магазин скоро появится!" class="soon" />
-
-  <Soon id="news" title="Новости скоро появятся!" class="soon" />
+  <RouterView />
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
-import Soon from "./components/Soon.vue";
+import { createMemoryHistory, createRouter } from "vue-router";
+
+import HomePage from "./Pages/HomePage.vue";
 import Profile from "./components/Profile.vue";
+import Reg from './components/Reg.vue';
+import Login from './components/Login.vue';
+
+const routes = [
+  { path: "/", component: HomePage },
+  { path: "/profile", component: Profile },
+  { path: "/reg", component: Reg },
+  { path: "/login", component: Login },
+];
+
+export const router = createRouter({
+  history: createMemoryHistory(),
+  routes,
+});
 
 export default {
   name: "App",
-  components: {
-    Header,
-    Main,
-    Soon,
-    Profile,
-  },
+  components: {}
 };
 </script>
 

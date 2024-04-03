@@ -4,9 +4,9 @@
       Лучший лаунчер по майнкрафту
     </h1>
 
-    <a href="#" class="glow-on-hover main__button" v-on:click="profile()">Войти!</a>
+    <RouterLink to="/login" class="glow-on-hover main__button">Войти!</RouterLink>
 
-    <a href="#" class="main__reg" v-on:click="profile()"> Нет акка? Регайся! </a>
+    <RouterLink to="/reg" class="main__reg"> Нет акка? Регайся! </RouterLink>
   </main>
 </template>
 

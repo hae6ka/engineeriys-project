@@ -9,7 +9,7 @@
 
       <span class="info__mail">Почта: {{ mail }}</span>
 
-      <a href="#download" class="info__download">Скачать лаунчер!</a>
+      <RouterLink to="/" class="info__download">Скачать лаунчер!</RouterLink>
     </div>
 
     <div class="profile__skin">
@@ -44,6 +44,7 @@ export default {
 @import "../styles/colors.scss";
 
 .profile {
+  margin-top: 100px;
   align-items: center;
   display: flex;
   justify-content: space-around;
